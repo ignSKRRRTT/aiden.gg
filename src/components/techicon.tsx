@@ -6,7 +6,7 @@ export default function Techicon({ href, src, delay, rounded }: { href: string, 
         <>
             <motion.li
                 initial={{ transform: 'translateY(20px)', opacity: 0 }}
-                whileInView={{ transform: 'translatey(0px)', opacity: 100 }}
+                whileInView={{ transform: 'translateY(0px)', opacity: 100 }}
                 transition={{ duration: 1, delay: delay, ease: [0.39, 0.21, 0.12, 0.96], }}
                 viewport={{ amount: 1, once: true }}
             >
