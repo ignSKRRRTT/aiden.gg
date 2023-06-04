@@ -228,46 +228,53 @@ export default function Home() {
               delay={0.2}
             />
             <Projectcard
+              src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/hvc9a4np.png'
+              title='Aiden.gg (This website)'
+              description='Aiden.gg is my personal website/portfolio. This is where I showcase my projects and skills. This website is open src on github!'
+              href='https://github.com/ignSKRRRTT/aiden.gg'
+              delay={0.3}
+            />
+            <Projectcard
               src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/46loh4yo.png'
               title='Oliver Bot'
               description='Oliver Bot is a bot that sends pictures of my ferret oliver. It has a couple other animal api commands too. Oliver bot was made by me.'
               href='https://oliver.pictures/'
-              delay={0.3}
+              delay={0.1}
             />
             <Projectcard
               src='https://cdn.e-z.host/e-zimagehosting/2082d908-7c65-4fc3-b02a-5f50f9141543/z5fxiscvmm9d8qyham.png'
               title='Guild Verify Bot'
               description='Guild Veirfy is a bot that gives your Hypixel guild members roles based on what ranks they have in game. Guild verify bot was made by me.'
               href="#"
-              delay={0.1}
+              delay={0.2}
             />
             <Projectcard
               src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/igpppynf.png'
               title='Guild Chat Bot'
               description='Guild Chat Bot is a bot that creates a bridge between discord and in-game chat to allow communication between the two. Guild chat bot was made by me.'
               href="#"
-              delay={0.2}
+              delay={0.3}
             />
             <Projectcard
               src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/us8fpaug.png'
               title='Stellar Bots Website'
               description='Stellar Bots is a group of bots made by my friend. I remade his old website design for him with tailwindcss and added animations.'
               href='https://stellarbot.dev/'
-              delay={0.3}
+              delay={0.1}
             />
             <Projectcard
               src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/sst4exui.png'
               title='Slosint Tools Website'
               description='Slosint is a website for a group of osint tools made by my friend. I made the entire frontend of slosint tools.'
               href='https://slosint.com/'
-              delay={0.1}
+              delay={0.2}
             />
             <Projectcard
               src='https://cdn.e-z.host/e-zimagehosting/2082d908-7c65-4fc3-b02a-5f50f9141543/hjyak8dvlxhyge59tc.png'
               title='vCloud Website'
               description='vCloud is a c# battle.net checker made by my friend. I made the landing page for him. <em>This website is fairly old and doesn&apos;t really represent my current skill level.</em>'
               href='https://vcloud.gg/'
-              delay={0.2}
+              delay={0.3}
             />
           </ul>
         </section>
