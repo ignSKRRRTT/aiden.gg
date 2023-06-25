@@ -24,7 +24,7 @@ export default function Home() {
     setPageLoad(true)
     setTimeout(() => {
       setDescLoad(true)
-    }, 300)
+    }, 100)
     setTimeout(() => {
       setImageLoad(true)
     }, 500)
@@ -126,7 +126,7 @@ export default function Home() {
                 />
               </ul>
             </div>
-            <img draggable={false} className={`relative rounded-full lg:w-72 w-0 border-2 border-blue-700 h-fit xl:-translate-y-14 lg:translate-y-6 mr-8 -translate-y-0 lg:scale-100 scale-0 ${imageLoad ? 'animate-fadeIn' : 'opacity-0'}`} alt="image" src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/lbo1x6wn.png' />
+            <img draggable={false} className={`relative rounded-full lg:h-72 lg:w-72 h-0 w-0 border-2 border-blue-700 xl:-translate-y-14 lg:translate-y-6 mr-8 -translate-y-0 lg:scale-100 scale-0 ${imageLoad ? 'animate-fadeIn' : 'opacity-0'}`} alt="image" src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/lbo1x6wn.png' />
           </div>
         </section>
         <svg id="about" className={`${pageLoad ? 'animate-fade-in-bottom' : 'opacity-0'}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#020617" fill-opacity="1" d="M0,160L48,133.3C96,107,192,53,288,48C384,43,480,85,576,96C672,107,768,85,864,74.7C960,64,1056,64,1152,80C1248,96,1344,128,1392,144L1440,160L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
@@ -141,7 +141,7 @@ export default function Home() {
                   <Typewriter
                     options={{
                       delay: 30,
-                      strings: ["My name is Aiden, I'm 17 years old and I currently live in New York. I have been interested in web development since 15 years old but never really attempted to make anything until I was 16 almost 17 years old. I have graduated from highschool a year and a half early, and plan to use my time before I go to college to better my skills. I hope by the end of my education to have landed a nice job in web development as this is something I hope to be doing for the rest of my life. I enjoy creating things and seeing others genuinely use and enjoy the end product."],
+                      strings: ["My name is Aiden, and I'm 17 years old. Currently, I live in New York. I have been interested in web development since the age of 15 but never really attempted to create anything until I was almost 17. I graduated from high school a year and a half early and plan to use this time before college to improve my skills. By the end of my education, I hope to secure a rewarding job in web development, as it is a lifelong passion of mine. I enjoy creating things and find great satisfaction when others genuinely use and appreciate the end product."],
                       loop: false,
                       autoStart: true,
                       deleteSpeed: 604800000,
@@ -253,27 +253,6 @@ export default function Home() {
               title='Guild Chat Bot'
               description='Guild Chat Bot is a bot that creates a bridge between discord and in-game chat to allow communication between the two. Guild chat bot was made by me.'
               href="#"
-              delay={0.3}
-            />
-            <Projectcard
-              src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/us8fpaug.png'
-              title='Stellar Bots Website'
-              description='Stellar Bots is a group of bots made by my friend. I remade his old website design for him with tailwindcss and added animations.'
-              href='https://stellarbot.dev/'
-              delay={0.1}
-            />
-            <Projectcard
-              src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/sst4exui.png'
-              title='Slosint Tools Website'
-              description='Slosint is a website for a group of osint tools made by my friend. I made the entire frontend of slosint tools.'
-              href='https://slosint.com/'
-              delay={0.2}
-            />
-            <Projectcard
-              src='https://cdn.e-z.host/e-zimagehosting/2082d908-7c65-4fc3-b02a-5f50f9141543/hjyak8dvlxhyge59tc.png'
-              title='vCloud Website'
-              description='vCloud is a c# battle.net checker made by my friend. I made the landing page for him. <em>This website is fairly old and doesn&apos;t really represent my current skill level.</em>'
-              href='https://vcloud.gg/'
               delay={0.3}
             />
           </ul>
