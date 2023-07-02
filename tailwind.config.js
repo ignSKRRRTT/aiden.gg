@@ -19,16 +19,6 @@ module.exports = {
           opacity: "1",
         },
       },
-      "fade-in-left": {
-        "0%": {
-          opacity: "0",
-          transform: "translateX(-20px)",
-        },
-        "100%": {
-          opacity: "1",
-          transform: "translateX(0)",
-        },
-      },
       "fade-in-top": {
         "0%": {
           opacity: "0",
@@ -52,7 +42,6 @@ module.exports = {
     },
     animation: {
       fadeIn: "fadeIn 1s ease-out",
-      "fade-in-left": "fade-in-left 1.5s cubic-bezier(.39,.21,.12,.96)",
       "fade-in-top": "fade-in-top 0.5s cubic-bezier(.39,.21,.12,.96)",
       "fade-in-bottom": "fade-in-bottom 0.5s cubic-bezier(.39,.21,.12,.96)",
     },

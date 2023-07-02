@@ -1,9 +1,5 @@
 import Head from 'next/head';
-import Image from 'next/image'
-import Link from 'next/link';
 import { Fragment, useEffect, useState } from 'react';
-import { useInView } from 'react-intersection-observer';
-import Typewriter from 'typewriter-effect';
 import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
 import { Listbox, Transition } from '@headlessui/react'
 import { useRouter } from 'next/router';
@@ -28,7 +24,6 @@ function classNames(...classes: any[]) {
 
 
 export default function Home() {
-    const router = useRouter()
 
     const [selected, setSelected] = useState(sites[0])
 
