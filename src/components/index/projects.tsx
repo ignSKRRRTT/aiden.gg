@@ -57,7 +57,7 @@ export default function Projects() {
                         delay={0.3}
                     />
                     <Projectcard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/t9w43u6g.png'
+                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/bjl7245d.png'
                         title='TNTTag Info'
                         description='TNTTag info is a stats website for the Hypixel game &quot;TNT Tag&quot;. It shows specific stats and overall leaderboards. The entire frontend and backend of tnttag.info was made by me.'
                         href='https://tnttag.info/'
