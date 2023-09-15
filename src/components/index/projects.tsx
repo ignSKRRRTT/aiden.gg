@@ -15,59 +15,59 @@ export default function Projects() {
                 </div>
                 <ul className='grid lg:grid-cols-3 grid-cols-1 max-w-5xl w-full mx-auto gap-4 pt-8 pb-16 lg:px-0 md:px-32 px-8'>
                     <Projectcard
-                        src='https://cdn.e-z.host/e-zimagehosting/2082d908-7c65-4fc3-b02a-5f50f9141543/38q1ernjfyann7b590.png'
+                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/38q1ernjfyann7b590.png'
                         title='E-Z.Host'
                         description='E-Z.host is a private ShareX file uploader that comes with a couple other mini features like a URL shortener and pastes. Me and my friend work together on e-z.host. I mainly do frontend and he mainly does backend.'
                         href='https://e-z.host/'
                         delay={0.1}
                     />
                     <Projectcard
-                        src='https://cdn.e-z.host/e-zimagehosting/2082d908-7c65-4fc3-b02a-5f50f9141543/thtbtb35c8ismwu5ev.png'
+                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/thtbtb35c8ismwu5ev.png'
                         title='E-Z.Bio'
                         description='E-Z.Bio is a side service for E-Z.host users. Its a bio link website used to put all your socials in once place. Me and my friend work together on e-z.bio. I mainly do frontend and he mainly does backend.'
                         href='https://e-z.bio/'
                         delay={0.2}
                     />
                     <Projectcard
-                        src='https://cdn.e-z.host/e-zimagehosting/2082d908-7c65-4fc3-b02a-5f50f9141543/9fh70jey.png'
+                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/9fh70jey.png'
                         title='E-Z.gg'
                         description='E-Z.gg is a site to show off the entire E-Z staff team and all of our related projects. e-z.gg was made entirely by me.'
                         href='https://e-z.gg/'
                         delay={0.3}
                     />
                     <Projectcard
-                        src='https://cdn.e-z.host/e-zimagehosting/2082d908-7c65-4fc3-b02a-5f50f9141543/6wkmhejr64fctl11ce.png'
-                        title='E-Z Tickets'
-                        description='E-Z Tickets is a fast and easy to setup ticket bot. It has all the features that you would want but isn&apos;t bloated. E-Z tickets was made by me.'
-                        href='https://e-z.host/tickets'
-                        delay={0.1}
-                    />
-                    <Projectcard
-                        src='https://cdn.e-z.host/e-zimagehosting/2082d908-7c65-4fc3-b02a-5f50f9141543/5a1b2k7554mwodo0kn.png'
-                        title='TNTTag Info'
-                        description='TNTTag info is a stats website for the Hypixel game &quot;TNT Tag&quot;. It shows specific stats and overall leaderboards. The entire frontend and backend of tnttag.info was made by me.'
-                        href='https://tnttag.info/'
-                        delay={0.2}
-                    />
-                    <Projectcard
                         src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/hvc9a4np.png'
                         title='Aiden.gg (This website)'
                         description='Aiden.gg is my personal website/portfolio. This is where I showcase my projects and skills. This website is open src on github!'
                         href='https://github.com/ignSKRRRTT/aiden.gg'
+                        delay={0.1}
+                    />
+                    <Projectcard
+                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/6wkmhejr64fctl11ce.png'
+                        title='E-Z Tickets'
+                        description='E-Z Tickets is a fast and easy to setup ticket bot. It has all the features that you would want but isn&apos;t bloated. E-Z tickets was made by me.'
+                        href='https://e-z.host/tickets'
+                        delay={0.2}
+                    />
+                    <Projectcard
+                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/j64ff1rn.png'
+                        title='HyDropper Info'
+                        description='HyDropper info is a stats website for the Hypixel game &quot;Dropper&quot;. It shows specific stats and overall leaderboards. The entire frontend and backend of HyDropper was made by me.'
+                        href='https://hydropper.info/'
                         delay={0.3}
+                    />
+                    <Projectcard
+                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/t9w43u6g.png'
+                        title='TNTTag Info'
+                        description='TNTTag info is a stats website for the Hypixel game &quot;TNT Tag&quot;. It shows specific stats and overall leaderboards. The entire frontend and backend of tnttag.info was made by me.'
+                        href='https://tnttag.info/'
+                        delay={0.1}
                     />
                     <Projectcard
                         src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/46loh4yo.png'
                         title='Oliver Bot'
                         description='Oliver Bot is a bot that sends pictures of my ferret oliver. It has a couple other animal api commands too. Oliver bot was made by me.'
                         href='https://oliver.pictures/'
-                        delay={0.1}
-                    />
-                    <Projectcard
-                        src='https://cdn.e-z.host/e-zimagehosting/2082d908-7c65-4fc3-b02a-5f50f9141543/z5fxiscvmm9d8qyham.png'
-                        title='Guild Verify Bot'
-                        description='Guild Veirfy is a bot that gives your Hypixel guild members roles based on what ranks they have in game. Guild verify bot was made by me.'
-                        href="#"
                         delay={0.2}
                     />
                     <Projectcard
