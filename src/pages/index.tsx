@@ -2,10 +2,10 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { useInView } from 'react-intersection-observer';
 
-import Navbar from '@/components/navbar';
-import Hero from '@/components/index/hero';
-import About from '@/components/index/about';
-import Projects from '@/components/index/projects';
+import Navbar from '@/components/Navbar';
+import Hero from '@/components/index/Hero';
+import About from '@/components/index/About';
+import Projects from '@/components/index/Projects';
 
 
 export default function Index() {

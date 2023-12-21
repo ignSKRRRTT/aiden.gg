@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
-export default function Projectcard({ src, title, description, href, delay }: { src: string, title: string, description: string, href: string, delay: number }) {
+export default function ProjectCard({ src, title, description, href, delay }: { src: string, title: string, description: string, href: string, delay: number }) {
     return (
         <>
             <motion.li

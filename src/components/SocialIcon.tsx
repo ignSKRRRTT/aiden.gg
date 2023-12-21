@@ -1,9 +1,8 @@
 import Link from "next/link";
-import { motion, Variants } from "framer-motion";
-import { JsxAttribute } from "typescript";
+import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
-export default function Socialicon({ href, svg, delay }: { href: string, svg: ReactNode, delay: number }) {
+export default function SocialIcon({ href, svg, delay }: { href: string, svg: ReactNode, delay: number }) {
     return (
         <>
             <motion.li

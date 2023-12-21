@@ -1,7 +1,7 @@
 import Link from "next/link";
-import { motion, Variants } from "framer-motion";
+import { motion } from "framer-motion";
 
-export default function Techicon({ href, src, delay, rounded }: { href: string, src?: string, delay: number, rounded?: boolean }) {
+export default function TechIcon({ href, src, delay, rounded }: { href: string, src?: string, delay: number, rounded?: boolean }) {
     return (
         <>
             <motion.li
