@@ -15,7 +15,7 @@ export default function About({ refID, inView }: { refID: any; inView: boolean }
                                 <Typewriter
                                     options={{
                                         delay: 30,
-                                        strings: ["My name is Aiden, and I'm 17 years old. Currently, I live in New York. I have been interested in web development since the age of 15 but never really attempted to create anything until I was almost 17. I graduated from high school a year and a half early and plan to use this time before college to improve my skills. By the end of my education, I hope to secure a rewarding job in web development, as it is a lifelong passion of mine. I enjoy creating things and find great satisfaction when others genuinely use and appreciate the end product."],
+                                        strings: ["My name is Aiden, and I'm 18 years old. Currently, I live in New York. I have been interested in web development since the age of 15 but never really attempted to create anything until I was almost 17. I graduated from high school a year and a half early and plan to use this time before college to improve my skills. By the end of my education, I hope to secure a rewarding job in web development, as it is a lifelong passion of mine. I enjoy creating things and find great satisfaction when others genuinely use and appreciate the end product."],
                                         loop: false,
                                         autoStart: true,
                                         deleteSpeed: 604800000,
