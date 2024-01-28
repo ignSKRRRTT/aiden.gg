@@ -1,5 +1,6 @@
 import AboutCard from "@/components/AboutCard";
 import { Tech } from "../../../typings";
+import { motion } from "framer-motion";
 
 export default function About() {
 
@@ -37,9 +38,15 @@ export default function About() {
   return (
     <>
       <section id='about' className="max-w-4xl w-full flex flex-col mx-auto">
-        <h1 className="font-leaguespartan text-center font-bold text-5xl text-text mt-16">
+        <motion.h1
+          className="font-leaguespartan text-center font-bold text-5xl text-text mt-16"
+          initial={{ transform: 'translateY(-30px)', opacity: 0 }}
+          whileInView={{ transform: 'translateY(0px)', opacity: 100 }}
+          transition={{ duration: 0.5, delay: 0.1, ease: [0.39, 0.21, 0.12, 0.96], }}
+          viewport={{ amount: 0.1, once: true }}
+        >
           About Me
-        </h1>
+        </motion.h1>
         <ul className="grid grid-cols-2 gap-4 mt-4">
           <AboutCard
             title="Overall"
@@ -53,7 +60,7 @@ export default function About() {
             title="Frontend"
             description="I have about a year of experience with frontend development, and I have worked with a variety of different frameworks and libraries."
             tech={frontendTech}
-            direction="left" 
+            direction="left"
             span={1}
             delay={0.15}
             gradient="bg-gradient-to-br"
