@@ -26,7 +26,7 @@ export default function AboutCard({ title, description, tech, direction, span, g
                         <Marquee className="my-2">
                             <ul className="flex flex-row gap-2">
                                 {tech.map((tech: Tech) => (
-                                    <TechBadge title={tech.title} icon={tech.icon} />
+                                    <TechBadge key={tech.title} title={tech.title} icon={tech.icon} />
                                 ))}
                             </ul>
                         </Marquee>
