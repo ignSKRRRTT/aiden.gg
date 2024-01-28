@@ -1,85 +1,63 @@
-import ProjectCard from '@/components/ProjectCard';
+import ProjectCard from "@/components/ProjectCard";
 
 export default function Projects() {
-    return (
-        <>
-            <section className='relative bg-slate-900 pb-8'>
-                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#020617" fill-opacity="1" d="M0,224L48,224C96,224,192,224,288,192C384,160,480,96,576,106.7C672,117,768,203,864,224C960,245,1056,203,1152,160C1248,117,1344,75,1392,53.3L1440,32L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-                <div id="projects" className='flex flex-col text-center gap-y-3'>
-                    <h1 className={`text-white font-bold sm:text-6xl text-4xl font-kanit pt-24`}>
-                        Projects
-                    </h1>
-                    <p className={`text-white font-semibold sm:text-3xl text-xl font-kanit px-4`}>
-                        Here are some projects I have worked on in the past.
-                    </p>
-                </div>
-                <ul className='grid lg:grid-cols-3 grid-cols-1 max-w-5xl w-full mx-auto gap-4 pt-8 pb-16 lg:px-0 md:px-32 px-8'>
-                    <ProjectCard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/bnzq10sh.png'
-                        title='E-Z.Host'
-                        description='E-Z.host is a private ShareX file uploader that comes with a couple other mini features like a URL shortener and pastes. Me and my friend work together on e-z.host. I mainly do frontend and he mainly does backend.'
-                        href='https://e-z.host/'
-                        delay={0.1}
-                    />
-                    <ProjectCard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/jg8fu2hr.png'
-                        title='E-Z.Bio'
-                        description='E-Z.Bio is a side service for E-Z.host users. Its a bio link website used to put all your socials in once place. Me and my friend work together on e-z.bio. I mainly do frontend and he mainly does backend.'
-                        href='https://e-z.bio/'
-                        delay={0.2}
-                    />
-                    <ProjectCard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/w7fntv5m.png'
-                        title='E-Z.gg'
-                        description='E-Z.gg is a site to show off the entire E-Z staff team and all of our related projects. e-z.gg was made entirely by me.'
-                        href='https://e-z.gg/'
-                        delay={0.3}
-                    />
-                    <ProjectCard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/hvc9a4np.png'
-                        title='Aiden.gg (This website)'
-                        description='Aiden.gg is my personal website/portfolio. This is where I showcase my projects and skills. This website is open src on github!'
-                        href='https://github.com/ignSKRRRTT/aiden.gg'
-                        delay={0.1}
-                    />
-                    <ProjectCard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/6wkmhejr64fctl11ce.png'
-                        title='E-Z Tickets'
-                        description='E-Z Tickets is a fast and easy to setup ticket bot. It has all the features that you would want but isn&apos;t bloated. E-Z tickets was made by me.'
-                        href='https://e-z.host/tickets'
-                        delay={0.2}
-                    />
-                    <ProjectCard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/j64ff1rn.png'
-                        title='HyDropper Info'
-                        description='HyDropper info is a stats website for the Hypixel game &quot;Dropper&quot;. It shows specific stats and overall leaderboards. The entire frontend and backend of HyDropper was made by me.'
-                        href='https://hydropper.info/'
-                        delay={0.3}
-                    />
-                    <ProjectCard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/bjl7245d.png'
-                        title='TNTTag Info'
-                        description='TNTTag info is a stats website for the Hypixel game &quot;TNT Tag&quot;. It shows specific stats and overall leaderboards. The entire frontend and backend of tnttag.info was made by me.'
-                        href='https://tnttag.info/'
-                        delay={0.1}
-                    />
-                    <ProjectCard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/46loh4yo.png'
-                        title='Oliver Bot'
-                        description='Oliver Bot is a bot that sends pictures of my ferret oliver. It has a couple other animal api commands too. Oliver bot was made by me.'
-                        href='https://oliver.pictures/'
-                        delay={0.2}
-                    />
-                    <ProjectCard
-                        src='https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/igpppynf.png'
-                        title='Guild Chat Bot'
-                        description='Guild Chat Bot is a bot that creates a bridge between discord and in-game chat to allow communication between the two. Guild chat bot was made by me.'
-                        href="#"
-                        delay={0.3}
-                    />
-                </ul>
-            </section>
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#0f172a" fill-opacity="1" d="M0,224L48,234.7C96,245,192,267,288,234.7C384,203,480,117,576,106.7C672,96,768,160,864,192C960,224,1056,224,1152,197.3C1248,171,1344,117,1392,90.7L1440,64L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path></svg>
-        </>
-    )
+  return (
+    <>
+      <section id='projects' className="max-w-4xl w-full flex flex-col mx-auto">
+        <h1 className="font-leaguespartan text-center font-bold text-5xl text-text mt-16">
+          Projects
+        </h1>
+        <ul className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-4">
+          <ProjectCard
+            url="https://e-z.host"
+            title="E-Z.Host"
+            description="E-Z.Host is an easy to use and easy to integrate file sharing platform. It has plenty of domain options, tons of URL options, and an extensive embed editor."
+            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/bnzq10sh.png"
+            delay={0.1}
+            gradient="bg-gradient-to-br"
+          />
+          <ProjectCard
+            url="https://e-z.bio"
+            title="E-Z.Bio"
+            description="E-Z.Bio is a feature rich bio link platform with an easy to use interface and tons of customization options. You can have a full page setup within minutes."
+            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/jg8fu2hr.png"
+            delay={0.2}
+            gradient="bg-gradient-to-bl"
+          />
+          <ProjectCard
+            url="https://e-z.gg"
+            title="E-Z.gg"
+            description="E-Z.gg serves as a hub for all of E-Z's projects and services. It has information about each project and all of our staff. The dashboard for everything is also hosted here."
+            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/w7fntv5m.png"
+            delay={0.1}
+            gradient="bg-gradient-to-tr"
+          />
+          <ProjectCard
+            url="https://discord.com/oauth2/authorize?client_id=1052415589995516014&permissions=8&scope=bot"
+            title="E-Z Tickets"
+            description="E-Z Tickets is a light weight discord ticket system that can be setup fully with 1 command. It has everything you would need without the bloat that comes with other options."
+            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/666x1pn5.png"
+            delay={0.2}
+            gradient="bg-gradient-to-tl"
+          />
+          <ProjectCard
+            url="https://hydropper.info"
+            title="HyDropper Info"
+            description="HyDropper info is a stats website for the Hypixel game 'Dropper'. You can view player stats or view the top 100 leaderboard. It also holds general information about the game."
+            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/j64ff1rn.png"
+            delay={0.1}
+            gradient="bg-gradient-to-br"
+          />
+          <ProjectCard
+            url="https://tnttag.info"
+            title="TntTag Info"
+            description="TntTag info is a stats website for the Hypixel game 'TNT Tag'. You can view player stats or view the top 100 leaderboard. There is also a discord bot you can invite to your server."
+            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/bjl7245d.png"
+            delay={0.2}
+            gradient="bg-gradient-to-tl"
+          />
+        </ul>
+      </section>
+    </>
+  );
 }

@@ -1,25 +1,25 @@
-import Link from "next/link";
 import { motion } from "framer-motion";
 
-export default function ProjectCard({ src, title, description, href, delay }: { src: string, title: string, description: string, href: string, delay: number }) {
-    return (
-        <>
-            <motion.li
-                initial={{ transform: 'translateY(20px)', opacity: 0 }}
-                whileInView={{ transform: 'translateY(0px)', opacity: 100 }}
-                transition={{ duration: 1, delay: delay, ease: [0.39, 0.21, 0.12, 0.96], }}
-                viewport={{ amount: 0.2, once: true }}
-            >
-                <Link className={`block h-full bg-slate-950 w-full rounded-md overflow-hidden border-2 border-blue-700 hover:-translate-y-1 duration-300`} draggable={false} href={href} target={href !== '#' ? '_blank' : ''}>
-                    <img draggable={false} className='border-b-2 border-blue-700' alt="image" src={src}></img>
-                    <h2 className='text-white font-bold text-2xl font-kanit pl-4 pt-4'>
-                        {title}
-                    </h2>
-                    <p className={`text-white text-lg font-kanit px-4 pb-4`}>
-                        {description}
-                    </p>
-                </Link>
-            </motion.li>
-        </>
-    )
+export default function ProjectCard({ url, title, description, image, delay, gradient }:{ url: string, title: string, description: string, image: string, delay: number, gradient: string}) {
+  return (
+    <>
+      <motion.li
+        className="group flex"
+        initial={{ transform: 'translateY(-30px)', opacity: 0 }}
+        whileInView={{ transform: 'translateY(0px)', opacity: 100 }}
+        transition={{ duration: 0.5, delay: delay, ease: [0.39, 0.21, 0.12, 0.96], }}
+        viewport={{ amount: 0.1, once: true }}
+      >
+        <a href={url} target="_blank" className={`p-4 flex flex-col ${gradient} from-primary to-secondary rounded-lg border-1 border-accent shadow-2xl shadow-background`}>
+          <img className="rounded-lg border-1 border-accent mb-4 grayscale group-hover:grayscale-0 duration-300" src={image} />
+          <h2 className="font-leaguespartan text-center font-semibold text-4xl text-text">
+            {title}
+          </h2>
+          <p className="font-leaguespartan text-center text-xl text-text">
+            {description}
+          </p>
+        </a>
+      </motion.li>
+    </>
+  );
 }

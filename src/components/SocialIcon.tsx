@@ -1,20 +1,20 @@
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { ReactNode } from "react";
 
-export default function SocialIcon({ href, svg, delay }: { href: string, svg: ReactNode, delay: number }) {
-    return (
-        <>
-            <motion.li
-                initial={{ transform: 'translateY(20px)', opacity: 0 }}
-                whileInView={{ transform: 'translateY(0px)', opacity: 100 }}
-                transition={{ duration: 1, delay: delay, ease: [0.39, 0.21, 0.12, 0.96], }}
-                viewport={{ amount: 1, once: true }}
-            >
-                <Link className={`flex h-12 w-12 rounded-full bg-slate-900 duration-300 hover:bg-slate-800`} draggable={false} href={href} target={'_blank'}>
-                    {svg}
-                </Link>
-            </motion.li>
-        </>
-    )
+export default function SocialIcon({ url, icon, delay }:{ url: string, icon: ReactNode, delay: number}) {
+  return (
+    <>
+      <motion.li
+        className="flex flex-col"
+        initial={{ transform: 'translateY(-30px)', opacity: 0 }}
+        whileInView={{ transform: 'translateY(0px)', opacity: 100 }}
+        transition={{ duration: 0.5, delay: delay, ease: [0.39, 0.21, 0.12, 0.96], }}
+        viewport={{ amount: 0.1, once: true }}
+      >
+        <a href={url} target="_blank" className="p-2 bg-secondary hover:bg-accent border-1 border-accent rounded-lg duration-300">
+          {icon}
+        </a>
+      </motion.li>
+    </>
+  );
 }

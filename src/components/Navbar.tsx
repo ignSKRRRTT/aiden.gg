@@ -1,27 +1,56 @@
-import Link from "next/link";
+import { motion } from "framer-motion";
 
-export default function Navbar({ clickScroll, clickScroll2, pageLoad }: { clickScroll: any, clickScroll2: any, pageLoad: boolean }) {
+export default function Navbar() {
+
+    const handleClickScroll = () => {
+        const element = document.getElementById('about');
+        if (element) {
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ 
+                top: elementPosition - 50,
+                behavior: 'smooth'
+            });
+        }
+    };
+
+    const handleClickScroll2 = () => {
+        const element = document.getElementById('projects');
+        if (element) {
+            const elementPosition = element.getBoundingClientRect().top + window.scrollY;
+            window.scrollTo({ 
+                top: elementPosition - 50,
+                behavior: 'smooth'
+            });
+        }
+    };
+
     return (
         <>
-            <header className='relative'>
-                <nav className={`${pageLoad ? 'animate-fade-in-top' : 'opacity-0'} fixed flex w-full z-50 bg-slate-950/80 p-4 sm:px-24 px-4 justify-between items-center`}>
-                    <Link href='/'>
-                        <img draggable={false} className='h-12 w-12 rounded-full' alt="image" src="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/lbo1x6wn.png" />
-                    </Link>
-                    <ul className='flex flex-row gap-x-2'>
-                        <li>
-                            <button className='text-white font-kanit text-lg p-2 hover:bg-slate-800 duration-300 rounded-md' onClick={clickScroll}>
-                                About Me
+            <motion.header
+                className="flex justify-center items-center w-full fixed px-4 top-0 z-10 pt-4"
+                initial={{ transform: 'translateY(-30px)', opacity: 0 }}
+                animate={{ transform: 'translateY(0px)', opacity: 100 }}
+                transition={{ duration: 0.5, delay: 0.1, ease: [0.39, 0.21, 0.12, 0.96], }}
+            >
+                <nav style={{ boxShadow: '0 0 30px 2.5px #0a0a0a' }} className="flex h-14 max-w-[46rem] w-screen bg-gradient-to-br from-primary/90 to to-secondary/90 backdrop-blur-md rounded-lg border-1 border-accent px-4">
+                    <div className="flex flex-row items-center justify-between w-full">
+                        <div className="flex flex-row gap-2 items-center">
+                            <img className="h-10 w-10" src="/me.png" />
+                            <button onClick={handleClickScroll} className="p-2 duration-300 text-text text-lg font-medium hover:bg-secondary font-leaguespartan rounded-md">
+                                About
                             </button>
-                        </li>
-                        <li>
-                            <button className='text-white font-kanit text-lg p-2 hover:bg-slate-800 duration-300 rounded-md' onClick={clickScroll2}>
+                            <button onClick={handleClickScroll2} className="p-2 duration-300 text-text text-lg font-medium hover:bg-secondary font-leaguespartan rounded-md">
                                 Projects
                             </button>
-                        </li>
-                    </ul>
+                        </div>
+                        <div className="min-[330px]:flex hidden flex-row gap-2 items-center">
+                            <a href="https://github.com/ignSKRRRTT/aiden.gg" target="_blank" className="p-2 duration-300 text-text text-lg font-medium hover:bg-secondary font-leaguespartan rounded-md">
+                                Source
+                            </a>
+                        </div>
+                    </div>
                 </nav>
-            </header>
+            </motion.header>
         </>
-    )
+    );
 }
