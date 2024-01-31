@@ -11,7 +11,7 @@ export default function SocialIcon({ url, icon, delay }:{ url: string, icon: Rea
         transition={{ duration: 0.5, delay: delay, ease: [0.39, 0.21, 0.12, 0.96], }}
         viewport={{ amount: 0.1, once: true }}
       >
-        <a href={url} target="_blank" className="p-2 bg-secondary hover:bg-accent border-1 border-accent rounded-lg duration-300">
+        <a draggable={false} href={url} target="_blank" className="p-2 bg-secondary hover:bg-accent border-1 border-accent rounded-lg duration-300">
           {icon}
         </a>
       </motion.li>
