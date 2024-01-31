@@ -11,7 +11,7 @@ export default function ProjectCard({ url, title, description, image, delay, gra
         viewport={{ amount: 0.1, once: true }}
       >
         <a href={url} target="_blank" className={`p-4 flex flex-col ${gradient} from-primary to-secondary rounded-lg border-1 border-accent shadow-2xl shadow-background`}>
-          <img className="rounded-lg border-1 border-accent mb-4 grayscale group-hover:grayscale-0 duration-300" src={image} />
+          <img draggable={false} className="rounded-lg border-1 border-accent mb-4 grayscale group-hover:grayscale-0 duration-300" src={image} />
           <h2 className="font-leaguespartan text-center font-semibold text-4xl text-text">
             {title}
           </h2>
