@@ -32,7 +32,7 @@ export default function Home() {
             <Head>
                 <title>Aiden.gg</title>
                 <link href="https://unpkg.com/pattern.css@1.0.0/dist/pattern.min.css" rel="stylesheet" />
-                <meta name="description" content="Aiden's (aka SKRRRTT) personal site" />
+                <meta name="description" content="Q's (aka xpert) personal site" />
                 <meta property="og:image" content="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/lbo1x6wn.png" />
                 <meta property='theme-color' content='#17171a' />
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
@@ -41,7 +41,7 @@ export default function Home() {
             <main className='flex h-screen flex-col justify-center pattern-grid-lg text-primary overflow-x-hidden'>
                 <div className='max-w-5xl w-full mx-auto'>
                     <h1 className={`${pageLoad ? 'animate-fade-in-top' : 'opacity-0'} text-white font-bold sm:text-6xl text-4xl font-leaguespartan text-center`}>
-                        Welcome back, Aiden 👋
+                        Welcome back, Q 👋
                     </h1>
                     <div className={`${pageLoad ? 'animate-fade-in-bottom' : 'opacity-0'} w-1/2 mx-auto pt-8`}>
                         <label htmlFor="search" className="block font-leaguespartan text-sm font-medium leading-6 text-white">
