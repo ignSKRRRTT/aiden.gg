@@ -1,7 +1,6 @@
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
-
-import SocialIcon from "@/components/SocialIcon";
+import SocialIcon from "./SocialIcon"; // Adjust the import path based on your file structure
 
 export default function Hero({ inView, descRef }: { inView: boolean, descRef: any }) {
   return (
@@ -11,7 +10,7 @@ export default function Hero({ inView, descRef }: { inView: boolean, descRef: an
           className="relative sm:p-12 p-6 w-full flex flex-col bg-gradient-to-br from-primary to to-secondary rounded-lg border-1 border-accent shadow-2xl shadow-background"
           initial={{ transform: 'translateY(30px)', opacity: 0 }}
           whileInView={{ transform: 'translateY(0px)', opacity: 100 }}
-          transition={{ duration: 0.5, delay: 0.1, ease: [0.39, 0.21, 0.12, 0.96], }}
+          transition={{ duration: 0.5, delay: 0.1, ease: [0.39, 0.21, 0.12, 0.96] }}
           viewport={{ amount: 0.1, once: true }}
           ref={descRef}
         >
