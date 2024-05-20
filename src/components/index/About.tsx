@@ -50,7 +50,7 @@ export default function About() {
         <ul className="grid grid-cols-2 gap-4 mt-4">
           <AboutCard
             title="Overall"
-            description="I have been interested in web development since the age of 9 but never attempted to create anything until I was almost 12 as I never knew where to start. , I hope to secure a rewarding job in web development, as it is a lifelong passion of mine. I enjoy creating things and find great satisfaction when others genuinely use and appreciate the end product."
+            description="I have been interested in creating cups since the age of 13 but never attempted to create anything until I was almost 17 as I never knew where to start. , I hope to secure a rewarding job in making cups, as it is a lifelong passion of mine. I enjoy creating things and find great satisfaction when others genuinely use and appreciate the end product."
             direction="top"
             span={2}
             delay={0.1}
@@ -58,7 +58,7 @@ export default function About() {
           />
           <AboutCard
             title="Frontend"
-            description="I have about a year of experience with frontend development, and I have worked with a variety of different frameworks and libraries."
+            description="I have about a year of experience with making cups, and I have worked with a variety of different materials and other stuff."
             tech={frontendTech}
             direction="left"
             span={1}
@@ -67,7 +67,7 @@ export default function About() {
           />
           <AboutCard
             title="Backend"
-            description="I haven't had as much experience with backend development, but I am currently learning how to use NodeJS and Fastify to create APIs."
+            description="coming soon text"
             tech={backendTech}
             direction="right"
             span={1}
@@ -76,7 +76,7 @@ export default function About() {
           />
           <AboutCard
             title="Other Technologies"
-            description="When it comes to the development process, I use a wide variety of tools, services, and technologies."
+            description="When it comes to the making of cups process, I use a wide variety of tools, services, and technologies."
             tech={otherTech}
             direction="bottom"
             span={2}
