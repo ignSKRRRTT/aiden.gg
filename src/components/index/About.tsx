@@ -57,7 +57,7 @@ export default function About() {
             gradient="bg-gradient-to-tl"
           />
           <AboutCard
-            title="Frontend"
+            title="experience"
             description="I have about a year of experience with making cups, and I have worked with a variety of different materials and other stuff."
             tech={frontendTech}
             direction="left"
@@ -66,7 +66,7 @@ export default function About() {
             gradient="bg-gradient-to-br"
           />
           <AboutCard
-            title="Backend"
+            title="coming soon"
             description="coming soon text"
             tech={backendTech}
             direction="right"
@@ -75,7 +75,7 @@ export default function About() {
             gradient="bg-gradient-to-tl"
           />
           <AboutCard
-            title="Other Technologies"
+            title="Other stuff"
             description="When it comes to the making of cups process, I use a wide variety of tools, services, and technologies."
             tech={otherTech}
             direction="bottom"
