@@ -1,6 +1,8 @@
 import { motion } from "framer-motion";
 import Typewriter from 'typewriter-effect';
-import SocialIcon from "./SocialIcon"; // Adjust the import path based on your file structure
+import React from 'react';
+// Define frontendTech variable
+const frontendTech = ['HTML', 'CSS', 'JavaScript', 'React'];
 
 export default function Hero({ inView, descRef }: { inView: boolean, descRef: any }) {
   return (
