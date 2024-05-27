@@ -23,7 +23,7 @@ export default function AboutCard({ title, description, tech, direction, span, g
                 {tech &&
                     <>
                         <Divider />
-                        <Marquee className="my-2">
+                        <Marquee speed={70} className="my-2">
                             <ul className="flex flex-row">
                                 {tech.map((tech: Tech) => (
                                     <TechBadge key={tech.title} title={tech.title} icon={tech.icon} />
