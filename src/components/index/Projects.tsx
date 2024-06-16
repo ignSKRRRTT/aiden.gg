@@ -19,7 +19,7 @@ export default function Projects() {
             url="https://e-z.host"
             title="E-Z.Host"
             description="E-Z.Host is an easy to use and easy to integrate file sharing platform. It has plenty of domain options, tons of URL options, and an extensive embed editor."
-            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/bnzq10sh.png"
+            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/xalg1ac2.png"
             delay={0.1}
             gradient="bg-gradient-to-br"
           />
@@ -27,7 +27,7 @@ export default function Projects() {
             url="https://e-z.bio"
             title="E-Z.Bio"
             description="E-Z.Bio is a feature rich bio link platform with an easy to use interface and tons of customization options. You can have a full page setup within minutes."
-            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/jg8fu2hr.png"
+            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/p1l218mg.png"
             delay={0.2}
             gradient="bg-gradient-to-bl"
           />
@@ -35,7 +35,7 @@ export default function Projects() {
             url="https://e-z.gg"
             title="E-Z.gg"
             description="E-Z.gg serves as a hub for all of E-Z's projects and services. It has information about each project and all of our staff. The dashboard for everything is also hosted here."
-            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/w7fntv5m.png"
+            image="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/rte9hp3m.png"
             delay={0.1}
             gradient="bg-gradient-to-tr"
           />
