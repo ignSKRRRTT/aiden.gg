@@ -14,10 +14,10 @@ export default function AboutCard({ title, description, tech, direction, span, g
                 transition={{ duration: 0.5, delay: delay, ease: [0.39, 0.21, 0.12, 0.96], }}
                 viewport={{ amount: 0.1, once: true }}
             >
-                <h2 className="font-leaguespartan text-center font-semibold text-4xl text-text">
+                <h2 className="text-center font-semibold text-4xl">
                     {title}
                 </h2>
-                <p className="font-leaguespartan text-center text-xl text-text mb-2">
+                <p className="text-center text-xl mb-2">
                     {description}
                 </p>
                 {tech &&

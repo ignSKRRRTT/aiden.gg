@@ -1,4 +1,5 @@
 import { motion } from "framer-motion";
+import Link from "next/link";
 import { ReactNode } from "react";
 
 export default function SocialIcon({ url, icon, delay }:{ url: string, icon: ReactNode, delay: number}) {
@@ -11,9 +12,9 @@ export default function SocialIcon({ url, icon, delay }:{ url: string, icon: Rea
         transition={{ duration: 0.5, delay: delay, ease: [0.39, 0.21, 0.12, 0.96], }}
         viewport={{ amount: 0.1, once: true }}
       >
-        <a draggable={false} href={url} target="_blank" className="p-2 bg-secondary hover:bg-accent border-1 border-accent rounded-lg duration-300">
+        <Link draggable={false} href={url} target="_blank" className="p-2 bg-secondary hover:bg-accent border-1 border-accent rounded-lg duration-300">
           {icon}
-        </a>
+        </Link>
       </motion.li>
     </>
   );

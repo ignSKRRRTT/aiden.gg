@@ -1,8 +1,6 @@
 import Head from 'next/head';
-import { Fragment, useEffect, useState } from 'react';
-import { CheckIcon, ChevronUpDownIcon } from '@heroicons/react/20/solid'
-import { Listbox, Transition } from '@headlessui/react'
-import { useRouter } from 'next/router';
+import { useEffect, useState } from 'react';
+import { GridPattern } from '@/components/GridPattern';
 
 
 
@@ -37,13 +35,20 @@ export default function Home() {
                 <meta name="viewport" content="width=device-width, initial-scale=1" />
                 <link rel="icon" href="/favicon.ico" />
             </Head>
-            <main className='flex h-screen flex-col justify-center pattern-grid-lg text-primary overflow-x-hidden'>
+            <main className='flex h-screen flex-col justify-center overflow-x-hidden'>
+                <GridPattern
+                    width={50}
+                    height={50}
+                    x={-1}
+                    y={-1}
+                    className='z-[-5]'
+                />
                 <div className='max-w-5xl w-full mx-auto'>
-                    <h1 className={`${pageLoad ? 'animate-fade-in-top' : 'opacity-0'} text-white font-bold sm:text-6xl text-4xl font-leaguespartan text-center`}>
+                    <h1 className={`${pageLoad ? 'animate-fade-in-top' : 'opacity-0'} font-bold sm:text-6xl text-4xl text-center`}>
                         Welcome back, Aiden 👋
                     </h1>
                     <div className={`${pageLoad ? 'animate-fade-in-bottom' : 'opacity-0'} w-1/2 mx-auto pt-8`}>
-                        <label htmlFor="search" className="block font-leaguespartan text-sm font-medium leading-6 text-white">
+                        <label htmlFor="search" className="block text-sm font-medium leading-6">
                             Search DuckDuckGo
                         </label>
                         <div className="relative mt-2 flex items-center">

@@ -6,6 +6,7 @@ import Hero from "@/components/index/Hero";
 import About from "@/components/index/About";
 import Projects from "@/components/index/Projects";
 import Footer from "@/components/index/Footer";
+import { GridPattern } from "@/components/GridPattern";
 
 export default function Home() {
 
@@ -25,7 +26,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <Navbar />
-      <main className="relative pattern-grid-lg min-h-screen text-primary overflow-x-hidden px-6">
+      <main className="relative min-h-screen overflow-x-hidden px-6">
+        <GridPattern
+          width={50}
+          height={50}
+          x={-1}
+          y={-1}
+          className='z-[-5]'
+        />
         <Hero inView={inView} descRef={ref} />
         <About />
         <Projects />

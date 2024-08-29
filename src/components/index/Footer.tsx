@@ -5,9 +5,12 @@ export default function Footer() {
         <>
             <footer className="max-w-4xl w-full flex flex-col mx-auto pt-4 pb-2">
                 <Divider />
-                <h2 className="font-leaguespartan text-center font-semibold text-base text-text pt-2">
+                <p className="text-center font-semibold text-base pt-2">
                     Aiden.gg - Made with NextJS, TailwindCSS, and ❤ by me
-                </h2>
+                </p>
+                <p className="text-center font-medium brightness-75 text-base">
+                    Last updated: Aug 26, 2024
+                </p>
             </footer>
         </>
     );
