@@ -61,7 +61,7 @@ export default function ProjectCard({ url, title, fullDescription, cardDescripti
               <div className="flex flex-col mt-2">
                 <h2 className="sm:text-2xl text-xl font-semibold">Team</h2>
                 {team.map((member, i) => (
-                  <p className="sm:text-lg text-base">
+                  <p key={i} className="sm:text-lg text-base">
                     <Link href={member.url} target="_blank" className="text-blue-500 hover:underline visited:bg-purple-500 font-medium">{member.name}</Link> - {member.role}
                   </p>
                 ))}
