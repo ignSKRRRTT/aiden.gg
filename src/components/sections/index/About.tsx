@@ -53,7 +53,7 @@ export default function About() {
         <ul className="grid grid-cols-2 gap-4 mt-4">
           <AboutCard
             title="Overall"
-            description="I've been running websites and other projects since the age of 15 but didn't learn how to code until I was nearly 17 as it took me a bit to find a way good to start learning. By the end of my education, I hope to secure a rewarding job in web development, as it is a lifelong passion of mine. I enjoy creating things and find great satisfaction when others genuinely use and appreciate the end product."
+            description="I've been running websites and other projects since the age of 15 but didn't learn how to code until I was nearly 17 as it took me a bit to find a good way to start learning. By the end of my education, I hope to secure a rewarding job in web development, as it is a lifelong passion of mine. I enjoy creating things and find great satisfaction when others genuinely use and appreciate the end product."
             direction="top"
             span={2}
             delay={0.1}
