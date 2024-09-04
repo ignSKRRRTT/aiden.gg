@@ -2,10 +2,10 @@ import Head from "next/head";
 import { useInView } from 'react-intersection-observer';
 
 import Navbar from "@/components/Navbar";
-import Hero from "@/components/index/Hero";
-import About from "@/components/index/About";
-import Projects from "@/components/index/Projects";
-import Footer from "@/components/index/Footer";
+import Hero from "@/components/sections/index/Hero";
+import About from "@/components/sections/index/About";
+import Projects from "@/components/sections/index/Projects";
+import Footer from "@/components/sections/index/Footer";
 import { GridPattern } from "@/components/GridPattern";
 
 export default function Home() {

@@ -2,11 +2,7 @@ import Head from 'next/head';
 import { useEffect, useState } from 'react';
 import { GridPattern } from '@/components/GridPattern';
 
-
-
 export default function Home() {
-
-
     const [pageLoad, setPageLoad] = useState(false);
     const [search, setSearch] = useState('')
 
