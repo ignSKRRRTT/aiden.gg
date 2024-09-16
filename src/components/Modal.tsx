@@ -29,7 +29,7 @@ export default function Modal({ children, open, setOpen }: { children: ReactNode
                                 leaveFrom="opacity-100 scale-100 translate-y-0"
                                 leaveTo="opacity-0 scale-0 translate-y-4 sm:translate-y-0"
                             >
-                                <Dialog.Panel className={`max-w-[55rem] w-full relative transform overflow-hidden rounded-md bg-secondary border-1 border-accent md:p-6 p-4 sm:m-8 mx-4 my-8 shadow-xl transition-all`}>
+                                <Dialog.Panel className={`max-w-[52rem] w-full relative transform overflow-hidden rounded-md bg-secondary border-1 border-accent md:p-6 p-4 sm:m-8 mx-4 my-8 shadow-xl transition-all`}>
                                     {children}
                                 </Dialog.Panel>
                             </Transition.Child>

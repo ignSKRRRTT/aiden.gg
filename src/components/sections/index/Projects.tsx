@@ -14,7 +14,7 @@ export default function Projects() {
         >
           Projects
         </motion.h1>
-        <ul className="grid sm:grid-cols-2 grid-cols-1 gap-4 mt-4">
+        <ul className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-4">
           <ProjectCard
             url="https://e-z.host"
             title="E-Z Host"
@@ -34,11 +34,6 @@ export default function Projects() {
             myRole="Founder, Head Developer, Designer"
             myTimeline="March 2021 - Present"
             projectTimeline="March 2021 - Present"
-            team={[
-              { name: "Aiden", role: "Founder, Head Developer, Designer", url: "https://aiden.gg" },
-              { name: "Tsoxas", role: "Backend Developer", url: "https://tsoxas.codes" },
-              { name: "Nathan", role: "Backend Developer", url: "https://e-z.bio/verity" }
-            ]}
             delay={0.1}
             gradient="bg-gradient-to-br"
           />
@@ -64,11 +59,6 @@ export default function Projects() {
             myRole="Founder, Head Developer, Designer"
             myTimeline="January 2022 - Present"
             projectTimeline="January 2022 - Present"
-            team={[
-              { name: "Aiden", role: "Founder, Head Developer, Designer", url: "https://aiden.gg" },
-              { name: "Tsoxas", role: "Backend Developer", url: "https://tsoxas.codes" },
-              { name: "Nathan", role: "Backend Developer", url: "https://e-z.bio/verity" }
-            ]}
             delay={0.2}
             gradient="bg-gradient-to-bl"
           />
@@ -91,11 +81,6 @@ export default function Projects() {
             myRole="Founder, Head Developer, Designer"
             myTimeline="March 2021 - Present"
             projectTimeline="March 2021 - Present"
-            team={[
-              { name: "Aiden", role: "Founder, Head Developer, Designer", url: "https://aiden.gg" },
-              { name: "Tsoxas", role: "Backend Developer", url: "https://tsoxas.codes" },
-              { name: "Nathan", role: "Backend Developer", url: "https://e-z.bio/verity" }
-            ]}
             delay={0.1}
             gradient="bg-gradient-to-tr"
           />
@@ -105,7 +90,6 @@ export default function Projects() {
             fullDescription={[
               "Lilith is a proxy mod for Hypixel that lets you to see the stats of other players in your game, auto dodge games that have cheaters, lookup stats for any player in game, and more.",
               "I wasn't in the team for very long because unfortunately right as my website was about to launch the creator of Lilith had to discontinue the project due to a change that Hypixel made that not only killed off Lilith but multiple other projects like it.",
-              "Learned a couple new skills and learned about a couple new libraries while working on this project. Quite happy with how it turned out.",
             ]}
             cardImage="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/k2irxpbf.png"
             cardDescription="Lilith is a proxy mod for Hypixel that lets you to see the stats of other players in your game, auto dodge games that have cheaters, lookup stats for any player in game, and more."
@@ -116,15 +100,24 @@ export default function Projects() {
             myRole="Frontend Developer/Designer"
             myTimeline="August 2024 - August 2024"
             projectTimeline="January 2021 - August 2024"
-            team={[
-              { name: "Nea", role: "Founder, Head Developer", url: "https://github.com/nealol" },
-              { name: "Zani", role: "Mod Developer", url: "https://github.com/Zxnii" },
-              { name: "Yanice", role: "Mod Developer", url: "https://yanice.me/" },
-              { name: "TheMackabu", role: "Mod Developer", url: "https://themackabu.dev/" },
-              { name: "Aiden", role: "Frontend Developer/Designer", url: "https://aiden.gg" },
-            ]}
             delay={0.2}
             gradient="bg-gradient-to-tl"
+          />
+          <ProjectCard
+            url="https://out.so"
+            title="Out"
+            fullDescription={[
+              "Out is a tool for content creators to easily upload their videos across multiple platforms at once. You can schedule uploads and upload existing videos from one platform to another.",
+              "It is currently in early development and I will be working on both the frontend and backend of the website. While working on this project I will be learning a lot about nuxt and vue as well as how to use certain serverless platforms.",
+            ]}
+            cardImage="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/xofdd0st.png"
+            cardDescription="Out is a tool for content creators to easily upload their videos across multiple platforms at once. You can schedule uploads and upload existing videos from one platform to another."
+            media={["https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/tcjt9h7x.mp4"]}
+            myRole="Fullstack Developer"
+            myTimeline="September 2024 - Present"
+            projectTimeline="May 2024 - Present"
+            delay={0.1}
+            gradient="bg-gradient-to-br"
           />
           <ProjectCard
             url="https://prax.wtf"
@@ -139,34 +132,8 @@ export default function Projects() {
             myRole="Frontend Developer/Designer"
             myTimeline="August 2024 - Present"
             projectTimeline="August 2022 - Present"
-            team={[
-              { name: "Flash", role: "Founder, Head Developer", url: "https://github.com/Flash-1337" },
-              { name: "ASM", role: "Client Developer", url: "https://github.com/DisabledMallis" },
-              { name: "Loud", role: "Client Developer", url: "https://github.com/loud2pro" },
-              { name: "Harvs", role: "Client Developer", url: "https://github.com/h-arvs" },
-              { name: "Aiden", role: "Frontend Developer/Designer", url: "https://aiden.gg" },
-            ]}
             delay={0.1}
             gradient="bg-gradient-to-br"
-          />
-          <ProjectCard
-            url="https://github.com/ignSKRRRTT/aiden.gg"
-            title="Portfolio"
-            fullDescription={[
-              "This is my portfolio website that I share everywhere online. It has links to all of my projects, links to all my socials, and a little bit about me and my development skills.",
-              "This is not the first version of my portfolio website but it is the first one that I am proud of. Having a place to show off all of my projects and skills is very important to me. I love that I can make something and then display it here for everyone to see.",
-            ]}
-            cardImage="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/omz5cqgk.png"
-            cardDescription="This is my portfolio website that I share everywhere online. It has links to all of my projects, links to all my socials, and a little bit about me and my development skills."
-            media={["https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/omz5cqgk.png"]}
-            myRole="Founder, Head Developer, Designer"
-            myTimeline="December 2022 - Present"
-            projectTimeline="December 2022 - Present"
-            team={[
-              { name: "Aiden", role: "Founder, Head Developer, Designer", url: "https://aiden.gg" },
-            ]}
-            delay={0.2}
-            gradient="bg-gradient-to-bl"
           />
           <ProjectCard
             url="https://discord.com/oauth2/authorize?client_id=1052415589995516014&permissions=8&scope=bot"
@@ -181,9 +148,6 @@ export default function Projects() {
             myRole="Founder, Head Developer"
             myTimeline="December 2022 - Present"
             projectTimeline="December 2022 - Present"
-            team={[
-              { name: "Aiden", role: "Founder, Head Developer", url: "https://aiden.gg" },
-            ]}
             delay={0.1}
             gradient="bg-gradient-to-tr"
           />
@@ -205,9 +169,6 @@ export default function Projects() {
             myRole="Founder, Head Developer, Designer"
             myTimeline="March 2023 - Present"
             projectTimeline="March 2023 - Present"
-            team={[
-              { name: "Aiden", role: "Founder, Head Developer, Designer", url: "https://aiden.gg" },
-            ]}
             delay={0.2}
             gradient="bg-gradient-to-tl"
           />

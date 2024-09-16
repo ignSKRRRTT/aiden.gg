@@ -4,7 +4,7 @@ import { useState } from "react";
 import Modal from "./Modal";
 import ImageCarousel from "./MediaCarousel";
 
-export default function ProjectCard({ url, title, fullDescription, cardDescription, cardImage, media, delay, gradient, myRole, myTimeline, projectTimeline, team }: { url: string, title: string, fullDescription: string[], cardDescription: string, cardImage: string, media: string[], delay: number, gradient: string, myRole: string, myTimeline: string, projectTimeline: string, team: { name: string, role: string, url: string }[] }) {
+export default function ProjectCard({ url, title, fullDescription, cardDescription, cardImage, media, delay, gradient, myRole, myTimeline, projectTimeline }: { url: string, title: string, fullDescription: string[], cardDescription: string, cardImage: string, media: string[], delay: number, gradient: string, myRole: string, myTimeline: string, projectTimeline: string }) {
   const [modalOpen, setModalOpen] = useState(false);
 
   return (
@@ -57,14 +57,6 @@ export default function ProjectCard({ url, title, fullDescription, cardDescripti
               <div className="flex flex-col mt-2">
                 <h2 className="sm:text-2xl text-xl font-semibold">Project Timeline</h2>
                 <p className="sm:text-lg text-base">{projectTimeline}</p>
-              </div>
-              <div className="flex flex-col mt-2">
-                <h2 className="sm:text-2xl text-xl font-semibold">Team</h2>
-                {team.map((member, i) => (
-                  <p key={i} className="sm:text-lg text-base">
-                    <Link href={member.url} target="_blank" className="text-blue-500 hover:underline visited:bg-purple-500 font-medium">{member.name}</Link> - {member.role}
-                  </p>
-                ))}
               </div>
             </div>
             <div className="w-auto h-0.5 bg-accent rounded-lg lg:hidden block my-2" />
