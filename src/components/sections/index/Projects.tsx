@@ -132,7 +132,7 @@ export default function Projects() {
             myRole="Frontend Developer/Designer"
             myTimeline="August 2024 - Present"
             projectTimeline="August 2022 - Present"
-            delay={0.1}
+            delay={0.2}
             gradient="bg-gradient-to-br"
           />
           <ProjectCard
