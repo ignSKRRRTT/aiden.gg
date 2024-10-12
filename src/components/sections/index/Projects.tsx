@@ -195,6 +195,8 @@ export default function Projects() {
             cardDescription="Tag Ranked is a discord bot that was made for hosting ranked games of TNT Tag. It has a full elo system, queue system, game system, and in-depth stats tracking."
             media={[
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/uvwoo2z1.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/tenubdtb.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/mln1pm2a.png",
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/kpyo5yzn.png",
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/nt1uy73q.png",
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/e0t3t3hy.png",
