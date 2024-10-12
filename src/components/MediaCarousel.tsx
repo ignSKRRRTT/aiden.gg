@@ -39,7 +39,6 @@ export default function MediaCarousel({ media }: { media: string[] }) {
                     {src.includes('.mp4') ?
                         <video
                             src={src}
-                            className="rounded-lg border-1 border-accent"
                             muted
                             loop
                             playsInline
@@ -48,7 +47,6 @@ export default function MediaCarousel({ media }: { media: string[] }) {
                         :
                         <img
                             src={src}
-                            className="rounded-lg border-1 border-accent"
                             alt={`Media ${i}`}
                         />
                     }

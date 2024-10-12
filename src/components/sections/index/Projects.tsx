@@ -1,12 +1,16 @@
+import Button from "@/components/Button";
 import ProjectCard from "@/components/ProjectCard";
 import { motion } from "framer-motion";
+import { useState } from "react";
 
 export default function Projects() {
+  const [showAll, setShowAll] = useState(false);
+
   return (
     <>
       <section id='projects' className="max-w-4xl w-full flex flex-col mx-auto">
         <motion.h1
-          className="text-center font-bold text-5xl mt-16"
+          className="text-center font-bold text-5xl mt-16 -mb-2"
           initial={{ transform: 'translateY(-30px)', opacity: 0 }}
           whileInView={{ transform: 'translateY(0px)', opacity: 100 }}
           transition={{ duration: 0.5, delay: 0.1, ease: [0.39, 0.21, 0.12, 0.96], }}
@@ -14,7 +18,12 @@ export default function Projects() {
         >
           Projects
         </motion.h1>
-        <ul className="grid md:grid-cols-2 grid-cols-1 gap-4 mt-4">
+        <ul className={`${showAll ? '' : 'max-h-[100rem]'} grid md:grid-cols-2 pt-6 pb-1 grid-cols-1 gap-4 overflow-hidden`}>
+          {!showAll &&
+            <div className="absolute flex justify-center bottom-[5rem] z-10 bg-gradient-to-t from-neutral-950 pb-8 pt-32 max-w-4xl w-full">
+              <Button label="Show More" onClick={() => setShowAll(true)} width="w-[10rem]" />
+            </div>
+          }
           <ProjectCard
             url="https://e-z.host"
             title="E-Z Host"
@@ -142,9 +151,13 @@ export default function Projects() {
               "E-Z Tickets is a light weight discord ticket system that can be setup fully with 1 command. It has everything you would need without the bloat that comes with other options.",
               "It was one of my first discord bots and has been surprisingly successful with nearly 2,000 servers and over 400,000 members. I learned a lot about discord.js and discord bot development in general while working on this project.",
             ]}
-            cardImage="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/qmk84wzt.png"
+            cardImage="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/k36z8iwq.png"
             cardDescription="E-Z Tickets is a light weight discord ticket system that can be setup fully with 1 command. It has everything you would need without the bloat that comes with other options."
-            media={["https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/qmk84wzt.png"]}
+            media={[
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/k36z8iwq.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/su4s5oxd.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/dsolrzxq.png"
+            ]}
             myRole="Founder, Head Developer"
             myTimeline="December 2022 - Present"
             projectTimeline="December 2022 - Present"
@@ -171,6 +184,29 @@ export default function Projects() {
             projectTimeline="March 2023 - Present"
             delay={0.2}
             gradient="bg-gradient-to-tl"
+          />
+          <ProjectCard
+            title="Tag Ranked"
+            fullDescription={[
+              "Tag Ranked is a discord bot that was made for hosting ranked games of TNT Tag. It has a full elo system, queue system, game system, and in-depth stats tracking.",
+              "It was first used in a 2 week long ranked event that had over 100 registered players and 3000+ games played and will continue to be used for future events.",
+            ]}
+            cardImage="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/uvwoo2z1.png"
+            cardDescription="Tag Ranked is a discord bot that was made for hosting ranked games of TNT Tag. It has a full elo system, queue system, game system, and in-depth stats tracking."
+            media={[
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/uvwoo2z1.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/kpyo5yzn.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/nt1uy73q.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/e0t3t3hy.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/n4juvwp9.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/yic6d1b0.png",
+              "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/7i3fim3v.png"
+            ]}
+            myRole="Head Developer"
+            myTimeline="October 2024 - Present"
+            projectTimeline="October 2024 - Present"
+            delay={0.1}
+            gradient="bg-gradient-to-t"
           />
         </ul>
       </section>
