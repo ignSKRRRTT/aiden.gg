@@ -53,10 +53,14 @@ export default function About() {
     }
   
     const handleMessage = (event: MessageEvent) => {
-      if (event.data !== "connected") {
-        setPresence(JSON.parse(event.data))
-      }
+      if (event.data === "connected") return
+      if (event.data === "pong") return
+      setPresence(JSON.parse(event.data))
     }
+
+    let ping = setInterval(() => {
+      socket.send("ping")
+    }, 10000)
   
     socket.addEventListener("open", handleOpen)
     socket.addEventListener("message", handleMessage)
@@ -69,6 +73,7 @@ export default function About() {
       socket.removeEventListener("open", handleOpen)
       socket.removeEventListener("message", handleMessage)
       socket.close()
+      clearInterval(ping)
       clearInterval(timer)
     }
   }, [])
