@@ -28,7 +28,7 @@ export default function MediaCarousel({ media }: { media: string[] }) {
     }
 
     return (
-        <div className="scrollbar flex w-full snap-x snap-mandatory overflow-x-auto rounded-lg carousel">
+        <div className="scrollbar flex w-full snap-x snap-mandatory overflow-x-auto rounded-lg media-carousel">
             {media.length > 1 && <CarouselControl isLeft handleNext={nextMedia} handlePrevious={previousMedia} />}
             {media.map((src, i) => (
                 <div
