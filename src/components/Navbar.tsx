@@ -28,7 +28,7 @@ export default function Navbar() {
     return (
         <>
             <motion.header
-                className="flex justify-center items-center w-full fixed px-4 top-0 z-10 pt-4"
+                className="flex justify-center items-center w-full fixed px-4 top-0 z-50 pt-4"
                 initial={{ transform: 'translateY(-30px)', opacity: 0 }}
                 animate={{ transform: 'translateY(0px)', opacity: 100 }}
                 transition={{ duration: 0.5, delay: 0.1, ease: [0.39, 0.21, 0.12, 0.96], }}

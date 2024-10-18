@@ -2,6 +2,13 @@
 
 I use this site to show off what I am currently working on, and some of my interests.
 
-I will not be helping people set this up. If you don't know how to do it then simply don't bother.
+**Steps to use:**
+1. clone/download repository
+2. download nodejs
+3. cd into the project directory
+4. run `npm i`
+5. run `npm run build && npm run start`
 
-![Logo](https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/lbo1x6wn.png)
+*or just use vercel*
+
+Presence system requires https://github.com/ignSKRRRTT/aiden.gg_presence

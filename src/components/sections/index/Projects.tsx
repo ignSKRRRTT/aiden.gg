@@ -20,7 +20,7 @@ export default function Projects() {
         </motion.h1>
         <ul className={`${showAll ? '' : 'max-h-[100rem]'} grid md:grid-cols-2 pt-6 pb-1 grid-cols-1 gap-4 overflow-hidden`}>
           {!showAll &&
-            <div className="absolute flex justify-center bottom-[5rem] z-10 bg-gradient-to-t from-neutral-950 pb-8 pt-32 max-w-4xl w-full">
+            <div className="absolute flex justify-center bottom-[5rem] z-10 bg-gradient-to-t from-background pb-8 pt-32 max-w-4xl w-full">
               <Button label="Show More" onClick={() => setShowAll(true)} width="w-[10rem]" />
             </div>
           }
