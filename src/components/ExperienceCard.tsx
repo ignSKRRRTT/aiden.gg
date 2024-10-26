@@ -19,17 +19,17 @@ export default function ExperienceCard({ url, title, fullDescription, cardDescri
                 transition={{ duration: 0.5, delay: delay, ease: [0.39, 0.21, 0.12, 0.96], }}
                 viewport={{ amount: 0.1, once: true }}
             >
-                <div className={`p-4 flex flex-row gap-6 ${gradient} from-primary to-secondary rounded-lg border-1 border-accent shadow-2xl shadow-background items-center`}>
-                    <img alt="" draggable={false} className="rounded-lg h-[14rem] grayscale group-hover:grayscale-0 duration-300" src={cardImage} />
+                <div className={`p-4 flex md:flex-row flex-col gap-6 ${gradient} from-primary to-secondary rounded-lg border-1 border-accent shadow-2xl shadow-background items-center`}>
+                    <img alt="" draggable={false} className="rounded-lg md:h-[14rem] sm:h-[12rem] h-[10rem] grayscale group-hover:grayscale-0 duration-300" src={cardImage} />
                     <div className="flex flex-col">
-                        <h2 className="text-left font-semibold text-4xl">
+                        <h2 className="md:text-left text-center font-semibold text-4xl">
                             {myRole}
                         </h2>
-                        <h3 className="text-left font-normal text-2xl">
+                        <h3 className="md:text-left text-center font-normal text-2xl">
                             {title} | <span className="brightness-75">{timeline}</span>
                         </h3>
                         <Divider />
-                        <p className="text-left text-lg mt-1">
+                        <p className="md:text-left text-center text-lg mt-1">
                             {cardDescription}
                         </p>
                         <div className="flex row gap-4 mt-2">
