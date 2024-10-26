@@ -62,7 +62,7 @@ function CarouselControl({ isLeft = false, handleNext, handlePrevious }: { isLef
         <button
             type="button"
             onClick={!isLeft ? handleNext : handlePrevious}
-            className={`absolute z-10 flex h-8 w-8 items-center justify-center self-center rounded-full bg-zinc-800 text-sm text-white opacity-40 md:text-2xl ${isLeft ? 'md:left-8 left-6' : 'md:right-8 right-6'}`}
+            className={`absolute z-10 flex h-8 w-8 items-center justify-center self-center rounded-full bg-neutral-700 text-sm text-white opacity-60 md:text-2xl ${isLeft ? 'md:left-8 left-6' : 'md:right-8 right-6'}`}
         >
             {isLeft ? <ArrowLeft className="h-4 w-4" /> : <ArrowRight className="h-4 w-4" />}
         </button>

@@ -1,13 +1,12 @@
-import Head from "next/head";
 import { useInView } from 'react-intersection-observer';
 
 import Navbar from "@/components/Navbar";
 import Hero from "@/components/sections/index/Hero";
 import About from "@/components/sections/index/About";
+import Experience from "@/components/sections/index/Experience";
 import Projects from "@/components/sections/index/Projects";
 import Footer from "@/components/sections/index/Footer";
 import { GridPattern } from "@/components/GridPattern";
-import PresenceCard from "@/components/PresenceCard";
 
 export default function Home() {
 
@@ -29,6 +28,7 @@ export default function Home() {
         />
         <Hero inView={inView} descRef={ref} />
         <About />
+        <Experience />
         <Projects />
         <Footer />
       </main>

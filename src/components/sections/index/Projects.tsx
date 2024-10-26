@@ -4,7 +4,8 @@ import { motion } from "framer-motion";
 import { useState } from "react";
 
 export default function Projects() {
-  const [showAll, setShowAll] = useState(false);
+  //set to true by default for now because there aren't enough projects to warrant a show more button
+  const [showAll, setShowAll] = useState(true);
 
   return (
     <>
@@ -41,8 +42,7 @@ export default function Projects() {
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/tb8jdveo.png"
             ]}
             myRole="Founder, Head Developer, Designer"
-            myTimeline="March 2021 - Present"
-            projectTimeline="March 2021 - Present"
+            timeline="March 2021 - Present"
             delay={0.1}
             gradient="bg-gradient-to-br"
           />
@@ -66,8 +66,7 @@ export default function Projects() {
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/slub8gdh.png"
             ]}
             myRole="Founder, Head Developer, Designer"
-            myTimeline="January 2022 - Present"
-            projectTimeline="January 2022 - Present"
+            timeline="January 2022 - Present"
             delay={0.2}
             gradient="bg-gradient-to-bl"
           />
@@ -88,14 +87,13 @@ export default function Projects() {
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/3xfw3xts.png"
             ]}
             myRole="Founder, Head Developer, Designer"
-            myTimeline="March 2021 - Present"
-            projectTimeline="March 2021 - Present"
+            timeline="March 2021 - Present"
             delay={0.1}
             gradient="bg-gradient-to-tr"
           />
           <ProjectCard
             url="https://lilith.aiden.gg"
-            title="Lilith"
+            title="Lilith Website"
             fullDescription={[
               "Lilith is a proxy mod for Hypixel that lets you to see the stats of other players in your game, auto dodge games that have cheaters, lookup stats for any player in game, and more.",
               "I wasn't in the team for very long because unfortunately right as my website was about to launch the creator of Lilith had to discontinue the project due to a change that Hypixel made that not only killed off Lilith but multiple other projects like it.",
@@ -107,42 +105,9 @@ export default function Projects() {
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/oxj9zman.png"
             ]}
             myRole="Frontend Developer/Designer"
-            myTimeline="August 2024 - August 2024"
-            projectTimeline="January 2021 - August 2024"
+            timeline="August 2024 - August 2024"
             delay={0.2}
             gradient="bg-gradient-to-tl"
-          />
-          <ProjectCard
-            url="https://out.so"
-            title="Out"
-            fullDescription={[
-              "Out is a tool for content creators to easily upload their videos across multiple platforms at once. You can schedule uploads and upload existing videos from one platform to another.",
-              "It is currently in early development and I will be working on both the frontend and backend of the website. While working on this project I will be learning a lot about nuxt and vue as well as how to use certain serverless platforms.",
-            ]}
-            cardImage="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/xofdd0st.png"
-            cardDescription="Out is a tool for content creators to easily upload their videos across multiple platforms at once. You can schedule uploads and upload existing videos from one platform to another."
-            media={["https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/tcjt9h7x.mp4"]}
-            myRole="Fullstack Developer"
-            myTimeline="September 2024 - Present"
-            projectTimeline="May 2024 - Present"
-            delay={0.1}
-            gradient="bg-gradient-to-br"
-          />
-          <ProjectCard
-            url="https://prax.wtf"
-            title="Prax Client"
-            fullDescription={[
-              "Prax is a hacked client for Minecraft bedrock edition. It mainly focuses on PvP servers like Hive and Cubecraft and aims to have unique features that other clients don't have.",
-              "Prax has been in and out of development for quite some time but with a really big recode coming up I offered my help to make them a new website. The website is still somewhat of a work in progress as the recode isn't finished yet but I feel it is coming along nicely."
-            ]}
-            cardImage="https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/7y4vcrgk.png"
-            cardDescription="Prax is a hacked client for Minecraft bedrock edition. It mainly focuses on PvP servers like Hive and Cubecraft and aims to have unique features that other clients don't have."
-            media={["https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/zex2w95r.mp4"]}
-            myRole="Frontend Developer/Designer"
-            myTimeline="August 2024 - Present"
-            projectTimeline="August 2022 - Present"
-            delay={0.2}
-            gradient="bg-gradient-to-br"
           />
           <ProjectCard
             url="https://discord.com/oauth2/authorize?client_id=1052415589995516014&permissions=8&scope=bot"
@@ -159,8 +124,7 @@ export default function Projects() {
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/dsolrzxq.png"
             ]}
             myRole="Founder, Head Developer"
-            myTimeline="December 2022 - Present"
-            projectTimeline="December 2022 - Present"
+            timeline="December 2022 - Present"
             delay={0.1}
             gradient="bg-gradient-to-tr"
           />
@@ -180,8 +144,7 @@ export default function Projects() {
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/77qjr509.png"
             ]}
             myRole="Founder, Head Developer, Designer"
-            myTimeline="March 2023 - Present"
-            projectTimeline="March 2023 - Present"
+            timeline="March 2023 - Present"
             delay={0.2}
             gradient="bg-gradient-to-tl"
           />
@@ -205,8 +168,7 @@ export default function Projects() {
               "https://r2.e-z.host/2082d908-7c65-4fc3-b02a-5f50f9141543/7i3fim3v.png"
             ]}
             myRole="Head Developer"
-            myTimeline="October 2024 - Present"
-            projectTimeline="October 2024 - Present"
+            timeline="October 2024 - Present"
             delay={0.1}
             gradient="bg-gradient-to-t"
           />
