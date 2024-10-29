@@ -45,7 +45,7 @@ export default function Navbar() {
                             </button>
                         </div>
                         <div className="min-[330px]:flex hidden flex-row gap-2 items-center">
-                            <Link draggable={false} href="https://github.com/ignSKRRRTT/aiden.gg" target="_blank" className="p-2 duration-300 text-lg font-medium hover:bg-secondary rounded-md">
+                            <Link draggable={false} href="https://github.com/aidendotgg/aiden.gg" target="_blank" className="p-2 duration-300 text-lg font-medium hover:bg-secondary rounded-md">
                                 Source
                             </Link>
                         </div>

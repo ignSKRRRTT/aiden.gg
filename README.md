@@ -11,4 +11,4 @@ I use this site to show off what I am currently working on, and some of my inter
 
 *or just use vercel*
 
-Presence system requires https://github.com/ignSKRRRTT/aiden.gg_presence
+Presence system requires https://github.com/aidendotgg/aiden.gg_presence
