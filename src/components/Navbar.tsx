@@ -15,7 +15,7 @@ export default function Navbar() {
     };
 
     const handleClickScroll2 = () => {
-        const element = document.getElementById('projects');
+        const element = document.getElementById('experience');
         if (element) {
             const elementPosition = element.getBoundingClientRect().top + window.scrollY;
             window.scrollTo({ 
@@ -41,7 +41,7 @@ export default function Navbar() {
                                 About
                             </button>
                             <button onClick={handleClickScroll2} className="p-2 duration-300 text-lg font-medium hover:bg-secondary rounded-md">
-                                Projects
+                                Experience
                             </button>
                         </div>
                         <div className="min-[330px]:flex hidden flex-row gap-2 items-center">
